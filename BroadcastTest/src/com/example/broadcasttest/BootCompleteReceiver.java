@@ -1,0 +1,15 @@
+package com.example.broadcasttest;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.widget.Toast;
+
+public class BootCompleteReceiver extends BroadcastReceiver {
+
+	@Override
+	public void onReceive(Context context, Intent intent) {
+		Toast.makeText(context, "個呆逼TCL手機上電啟動了，趕快跑！", Toast.LENGTH_LONG).show();
+	}
+
+}
